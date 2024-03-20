@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto+Slab:wght@500&family=Sarabun:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* body part */
+body{
+    font-family: 'DM Serif Text', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* nav bar part */
+
+header {
+    padding: 20px 0;
+}
+
+#navbar {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #0C356A;
+}
+
+#navbar ul {
+    float: right;
+}
+
+#navbar ul li {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 70px;
+    padding: 0 20px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a:hover{  
+    background-color: #2962ff;
+
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("https://img.freepik.com/premium-photo/beginning-champion-close-up-tennis-ball-courts-background_49717-208.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.welcome{
+    color: white;
+}
+.word{
+    font-size: 4em;
+}
+
+.message{
+    font-size: 2em;
+    color: #0A1172;
+}
+
+section{
+    background-color: #2962ff;
+}
+
+.highlight{
+    text-align: center;
+    background-color: #279EFF;
+    height: 60px;
+}
+
+.header{
+    font-size: 2.5rem;
+}
+
+/* profile part */
+#profile{
+    
+    justify-content: center;
+}
+
+.info{
+    margin: 20px 15px;
+    letter-spacing: 1.5px;
+    font-size: 1.5em;
+}
+
+
+
+.profile-info{
+    display: inline-block;
+    margin: 20px 15px;
+    margin-left: 25% ;
+}
+
+.uinfo{
+    font-size: 25px;
+}
+
+.edu{
+    font-size: 30px;
+}
+
+.myphoto{
+    width: 300px;
+    display: inline-block;   
+}
+
+span{
+    color: white;
+    font-size: 30px;
+}
+
+/* img{
+    display: block;
+    align-items: center;
+    width: 480px;
+
+} */
+
+.project-link{
+    text-decoration: none;
+    font-size: 30px; 
+}
+
+article{
+    max-width: 420px;
+    background: #40F8FF;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    color: black;
+}
+
+article:hover{
+    color: #0C356A;
+}
+
+
+.img{
+    height: 250px;
+    background-size: cover;
+
+}
+
+.p1{
+    background-image: url("https://www.atlanticmarine.com/wp-content/uploads/2018/10/Survey.jpg");
+}
+
+.p2{
+    background-image: url("https://st2.depositphotos.com/4728511/7852/i/450/depositphotos_78527378-stock-photo-tennis-ball-on-tennis-grass.jpg"); 
+}
+
+.p3{
+    background-image: url("https://static.helpjuice.com/helpjuice_production/uploads/upload/image/4752/3090840/1682475402989-Software%2BDocumentation.jpg"); 
+}
+
+.p4{
+    background-image: url("https://i.ibb.co/JCtRVPF/YOUNG-TENNIS-1.png");
+}
+
+.project-tile{
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.project-info{
+    font-size: 20px;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    grid-gap: 5rem;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+ion-icon{
+    margin-top: 20px;
+    font-size: 6rem;
+    padding: 0 100px;
+    color: black;
+}
+
+ion-icon:hover{
+    color: #0C356A;
+}
+
+footer{
+    text-align: center;
+    background-color: #D5FFD0;
+}
+
+/* change from screen width css part */
+@media only screen and (min-width:815px) {
+    #profile{
+        align-items: center;
+        flex-direction: row;
+        
+    }
+
+    .myphoto{
+        margin-left: 32.5%;
+    }
+}
