@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto+Slab:wght@500&family=Sarabun:wght@600&display=swap');
 
-*{
+*,
+*:before,
+*:after{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-size: 45px;
+    font-family: 'Roboto',sans-serif;
 }
 
 html{
@@ -11,7 +16,6 @@ html{
 
 /* body part */
 body{
-    font-family: 'DM Serif Text', serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -20,7 +24,19 @@ body{
 /* nav bar part */
 
 header {
+    position: fixed;
     padding: 20px 0;
+    top: 0;
+    left: 0;
+    
+}
+
+/* photo part */
+
+.container {
+    padding: 0 20px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 #navbar {
@@ -29,22 +45,30 @@ header {
     top: 0;
     width: 100%;
     height: 75px;
-    background-color: #0C356A;
+    
 }
 
 #navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     float: right;
 }
 
 #navbar ul li {
     display: inline-block;
+    margin-left: 25px;
+    height: 70px;
     font-size: 25px;
     line-height: 70px;
     padding: 0 20px;
+    transition: .5s linear;
 }
 
 #navbar a{
     text-decoration: none;
+    display: block;
+    position: relative;
     color: white;
 }
 
@@ -60,8 +84,6 @@ header {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: url("https://img.freepik.com/premium-photo/beginning-champion-close-up-tennis-ball-courts-background_49717-208.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -69,8 +91,50 @@ header {
 .welcome{
     color: white;
 }
-.word{
-    font-size: 4em;
+
+.wrapper {
+    box-sizing: content-box;
+    height: 70px;
+    display: flex;
+    padding: 50px 30px;
+}
+
+.words{
+    overflow: hidden;
+}
+
+span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words {
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
 }
 
 .message{
@@ -88,9 +152,7 @@ section{
     height: 60px;
 }
 
-.header{
-    font-size: 2.5rem;
-}
+
 
 /* profile part */
 #profile{
@@ -101,7 +163,6 @@ section{
 .info{
     margin: 20px 15px;
     letter-spacing: 1.5px;
-    font-size: 1.5em;
 }
 
 
@@ -125,10 +186,7 @@ section{
     display: inline-block;   
 }
 
-span{
-    color: white;
-    font-size: 30px;
-}
+
 
 /* img{
     display: block;
