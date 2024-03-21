@@ -98,6 +98,10 @@ header {
 
 .welcome{
     color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
 }
 
 .head-word{
@@ -105,11 +109,9 @@ header {
 }
 
 .wrapper {
-
     box-sizing: content-box;
     height: 40px;
     display: inline-flex;
-    
 }
 
 .words{
@@ -118,7 +120,48 @@ header {
 
 .name{
     color: #00A693;
+    font-size: 48px;
+    line-height: 1.2;
 }
+
+.welcome-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.welcome-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00A693;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+
+.btn-box a:hover{
+    color: white;
+}
+
+
 
 .change{
     display: block;
@@ -128,6 +171,8 @@ header {
     font-weight: bold;
     animation: spin_words 6s infinite;
 }
+
+
 
 @keyframes spin_words {
     10%{
@@ -238,7 +283,7 @@ article:hover{
 }
 
 .p1{
-    background-image: url("https://www.atlanticmarine.com/wp-content/uploads/2018/10/Survey.jpg");
+    background-image: url("image/license_gen.jpg");
 }
 
 .p2{
