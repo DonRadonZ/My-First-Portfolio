@@ -13,7 +13,7 @@
         <header>
             <div class="container">
                 <div class="logo-box">
-
+                    RadonZ
 
                 </div>
 
@@ -22,13 +22,13 @@
                 <ul>
                     <li><a href="#welcome-section">Home</a></li>
                     <li><a href="#profile">Profile</a></li>
-                    <li><a href="#projects">Project</a></li>
-                    <li><a href="#connect" class="special">Let's Connect</a></li>   
+                    <li><a href="#projects">Project</a></li>  
+                    <li><a href="#connect">Contact</a></li>
                 </ul>
             </nav> 
         </header>
         
-        <section class="welcome-section">
+        <section id="welcome-section" class="welcome-section">
             <div class="welcome-content">
                 <h1>Welcome to my portfolio</h1>
                 <h1>Hello everyone,</h1>
@@ -50,19 +50,27 @@
                 </div> 
               </div>
               <div class="main">
-              <!-- <img src="/image/profile_photo.png" alt="profile photo"> -->
+                <span class="welcome-imgHover"></span>
+                <div class="welcome-img">
+                    <div class="glowing-circle">
+                        <div class="image">
+                            <img src="image/profile_photo.jpg" alt="profile photo">
+                        </div>
+                    </div>
+                </div>
+              
             </div>
         </section>
             <section id="profile">
                 <div class="highlight">
                     <h2 class="header">Profile</h2>
                 </div>
-                <div class="profile">
+                <div class="profile-section">
                     <div class="profile-info">
-                        <p class="uinfo">Name:  Supachai Sinkaseam</p>
-                        <p class="uinfo">Nickname:  Don</p>
-                        <p class="uinfo">Sport: Tennis</p>
-                        <p class="uinfo">Hobby: watch anime, play game</p>
+                        <h2>Name</h2><h3 class="uinfo">  Supachai Sinkaseam</h3>
+                        <h2>Nickname</h2><h3 class="uinfo">  Don</h3>
+                        <h2>Sport</h2><h3 class="uinfo"> Tennis</h3>
+                        <h2>Hobby</h2><h3 class="uinfo"> watch anime, play game</h3>
                         <h2>Message from author</h2> 
                         <p> My name is Supachai Sinkaseam. I am a fresh graduate from King Mongkut University Technology Thonburi. I passionate  developer and machine learning with a creative mind and love to design some of poster or website.I enjoy to has activity with another people and I eager to learning and explore about new technology and framework for design for develop my work and create something new in future.</p>
                         <h2>Coding skill</h2>
@@ -72,6 +80,9 @@
                         <img src="/icons/react.svg" alt="react icon">   
                         <img src="/icons/icons8-typescript.svg" alt="Typescript icon">
                         <img src="/icons/icons8-python.svg" alt="python icon">    
+                    </div>
+                    <div class="image">
+                    <img src="image/introduce_photo.jpg" alt="introduce_photo">
                     </div>
                 </div>
             </section>
@@ -138,21 +149,37 @@
             
             <section id="get_in_touch">
                 <div class="highlight">
-                    <h2 class="header">Get In Touch</h2>
+                    <h2 class="header">Contact Me</h2>
                 </div>
-               <input type="text" placeholder="Firstname"/> 
-               <input type="text" placeholder="Lastname"/> 
-               <input type="text" placeholder="Tel."/> 
-               <input type="text" placeholder="E-mail"/> 
-               <input type="text" placeholder="Firstname"/> 
-
+                <div class="contact_section">
+                    <div class="contact_content">
+                    <h4>Let's work together</h4>
+                    <p>If you want to contact me for work partner together. You can put form and wait me to response.</p>
+                    <h3>Tel: 080-629-6713</h3>
+                    <h3>E-mail: supachai27102000@gmail.com</h3>
+                    <div class="contact-sci">
+                    <a id="profile-link" target="_blank" href="https://www.facebook.com/supachai.sinkraseam/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a id="profile-link" target="_blank" href="https://www.linkedin.com/in/supachai-s-40650a104/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a id="profile-link" target="_blank" href="https://github.com/DonRadonZ"><ion-icon name="logo-github"></ion-icon></a>
+                   </div>
+                
+               </div>
+               <div class="contact-form">
+                
+                <form action="">
+               <input type="text" placeholder="Firstname" required/> 
+               <input type="text" placeholder="Lastname"required/> 
+               <input type="number" placeholder="Tel." required/> 
+               <input type="email" placeholder="E-mail" required/> 
+               <textarea cols="40" rows="10" placeholder="Message"></textarea>
+               <input type="submit" value="submit" class="submit">
+               </form>
+                
+               </div> 
             </section>
-        <footer id="contact">
-            <div class="highlight">
-                <h2 class="header">Contact</h2>
-            </div>
-            <a id="profile-link" target="_blank" href="https://www.facebook.com/supachai.sinkraseam/"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a id="profile-link" target="_blank" href="https://www.linkedin.com/in/supachai-s-40650a104/"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a id="profile-link" target="_blank" href="https://github.com/DonRadonZ"><ion-icon name="logo-github"></ion-icon></a>
-            </footer>
+        
+
+            
+
+
 </html>
