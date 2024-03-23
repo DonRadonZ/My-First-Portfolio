@@ -39,7 +39,6 @@ header {
 .header{
     font-size: 40px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 /* photo part */
@@ -273,7 +272,7 @@ header {
 
 .highlight{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     height: 70px;
 }
 
@@ -420,13 +419,34 @@ header {
 
 /* project part */
 
-.project-link{
+.projects{
+    height: 100vh;
+    align-items: center;
+}
+
+.projects h2{
+    margin-bottom: 1rem;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    grid-gap: 5rem;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.projects-link{
     text-decoration: none;
     font-size: 30px; 
 }
 
 article{
-    max-width: 420px;
+    max-width: 400px;
     background: #00A693;
     border-radius: 10px;
     padding: 10px;
@@ -434,7 +454,12 @@ article{
     color: black;
 }
 
-article:hover{
+article ion-icon{
+    font-size: 40px;
+    color: #000;
+}
+
+article ion-icon:hover{
     color: white;
 }
 
@@ -472,30 +497,78 @@ article:hover{
 }
 
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2,400px);
-    grid-gap: 5rem;
-    justify-content: center;
-    margin-bottom: 60px;
-}
+
 
 /* contact part */
 
-
+.contact-wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
 
 .contact-form{
-    width: 500px;
-    height: 500px;
-    background-color: yellow;
+    max-width: 70rem;
+    margin: 2rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+.contact-form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+::placeholder{
+    color: white;
+}
+
+.contact-form .input-box input, .contact-form textarea{
+    width: 100%;
+    margin-bottom: 5px;
+    color: white;
+    background: #00A693;
+    border-radius: 8px;
+}
+
+.contact-form .input-box input{
+    width: 49%;
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+.contact-form .btn{
+    margin-top: 2rem;
+    background: #00A693;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .contact-info{
-    width: 500px;
-    height: 500px;
-    background-color: red;
+    width: 600px;
+    height: 600px;
 }
 
+.contact-info h2{
+    margin-top: 20px;
+}
+
+.social-media ion-icon{
+    font-size: 48px;
+    padding: 0 25px;
+    color:#00A693
+}
+
+.social-media ion-icon:hover{
+    color:#0A1172
+}
 
 
 /* ion-icon{
@@ -510,7 +583,6 @@ ion-icon:hover{
 } */
 
 /* change from screen width css part */
-@media only screen and (min-width:815px) {
-
+@media screen and (max-width: 1200px) {
 
 }
