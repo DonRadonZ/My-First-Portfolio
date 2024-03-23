@@ -484,10 +484,30 @@ article:hover{
 
 
 
+.contact-form{
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+}
+
+.contact-info{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
 
 
 
+/* ion-icon{
+    font-size: 48px;
+    color:#00A693;
+    padding: 0 24px;
+}
 
+ion-icon:hover{
+    font-size: 48px;
+    color: white;
+} */
 
 /* change from screen width css part */
 @media only screen and (min-width:815px) {
