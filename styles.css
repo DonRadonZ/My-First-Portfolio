@@ -37,8 +37,9 @@ header {
 }
 
 .header{
-    font-size: 60px;
-    
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* photo part */
@@ -315,7 +316,7 @@ header {
 }
 
 .uinfo{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     color:#FFC436;
 }
@@ -332,7 +333,7 @@ header {
 /* timeline part */
 
 .timeline {
-    height: 60vh;
+    height: 70vh;
     width: min(600px, 100vw);
 }
 
@@ -398,6 +399,8 @@ header {
     z-index: 1;
 }
 
+/* project-part */
+
 .timeline_grid{
     display: grid;
     grid-template-columns: repeat(2,600px);
@@ -437,7 +440,7 @@ article:hover{
 
 
 .img{
-    height: 250px;
+    height: 300px;
     background-size: cover;
     border-radius: 8px;
 
@@ -474,73 +477,20 @@ article:hover{
     grid-template-columns: repeat(2,400px);
     grid-gap: 5rem;
     justify-content: center;
-    margin-top: 70px;
     margin-bottom: 60px;
 }
 
 /* contact part */
 
-.contact_section{
-    max-width: 800px;
-    justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    
-}
-
-.contact_section h4{
-    font-size: 30px;
-}
-
-.contact_section h3{
-    font-size: 25px;
-}
-
-.contact_section p{
-    font-size: 20px;
-}
-
-.contact-form{
-    align-items: center;
-}
 
 
-.contact-form form input, form textarea{
-    border: none;
-    outline: none;
-    width: 50%;
-    padding: 18px;
-    background: #0A1172;
-    color: white;
-    font-size: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-}
 
 
-ion-icon{
-    margin-top: 20px;
-    font-size: 48px;
-    padding: 0 25px;
-    color: black;
-}
-
-ion-icon:hover{
-    color: white;
-}
 
 
 
 /* change from screen width css part */
 @media only screen and (min-width:815px) {
-    #profile{
-        align-items: center;
-        flex-direction: row;
-        
-    }
 
-    .myphoto{
-        margin-left: 32.5%;
-    }
+
 }

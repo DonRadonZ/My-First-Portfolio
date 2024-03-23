@@ -23,7 +23,7 @@
                     <li><a href="#welcome-section">Home</a></li>
                     <li><a href="#profile">Profile</a></li>
                     <li><a href="#projects">Project</a></li>  
-                    <li><a href="#connect">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav> 
         </header>
@@ -62,11 +62,9 @@
             </div>
         </section>
             <section id="profile">
-                <div class="highlight">
-                    <h2 class="header">Profile</h2>
-                </div>
                 <div class="profile-section">
                     <div class="profile-info">
+                        <h2 class="header">Profile</h2>
                         <h2>Name</h2><h3 class="uinfo">  Supachai Sinkaseam</h3>
                         <h2>Nickname</h2><h3 class="uinfo">  Don</h3>
                         <h2>Sport</h2><h3 class="uinfo"> Tennis</h3>
@@ -122,12 +120,9 @@
             </div>
             </section>
             <section id="projects">
-                <div class="highlight">
+                <div class="project-section">
                     <h2 class="header">Project</h2>
-                </div>
-
                 <div class="grid">
-
                     <a class="project-link" href="https://github.com/DonRadonZ/Softnix-License-Generator">
                     <article class="effect">
                     <div class="img p1"></div>
@@ -142,40 +137,42 @@
                     <h2 class="project-tile">Senior Project</h2>
                         <p class="project-info">This project I made from senior project about Intellegent system via transaction that use for help safe transaction.</p>
                     </article>        
-                    </a>        
-                        
+                    </a>              
+                </div>
                 </div>
             </section>
             
-            <section id="get_in_touch">
-                <div class="highlight">
+            <section id="contact">
                     <h2 class="header">Contact Me</h2>
+                <div class="contact-wrapper">
+                    <form id="contact-form" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" name="name" value="" id="name" placeholder="NAME" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" name="name" value="" id="name" placeholder="NAME" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" placeholder="MESSAGE" name="message" rows="10" required></textarea>
+
+                        <button class="btn btn-primary submit-button" id="submit" value="SEND"><span>SUBMIT</span></button>
+                    </form>
+
                 </div>
-                <div class="contact_section">
-                    <div class="contact_content">
-                    <h4>Let's work together</h4>
-                    <p>If you want to contact me for work partner together. You can put form and wait me to response.</p>
-                    <h3>Tel: 080-629-6713</h3>
-                    <h3>E-mail: supachai27102000@gmail.com</h3>
-                    <div class="contact-sci">
-                    <a id="profile-link" target="_blank" href="https://www.facebook.com/supachai.sinkraseam/"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a id="profile-link" target="_blank" href="https://www.linkedin.com/in/supachai-s-40650a104/"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a id="profile-link" target="_blank" href="https://github.com/DonRadonZ"><ion-icon name="logo-github"></ion-icon></a>
-                   </div>
-                
-               </div>
-               <div class="contact-form">
-                
-                <form action="">
-               <input type="text" placeholder="Firstname" required/> 
-               <input type="text" placeholder="Lastname"required/> 
-               <input type="number" placeholder="Tel." required/> 
-               <input type="email" placeholder="E-mail" required/> 
-               <textarea cols="40" rows="10" placeholder="Message"></textarea>
-               <input type="submit" value="submit" class="submit">
-               </form>
-                
-               </div> 
+                <!-- Left Contact Page -->
+
+                <div class="direct-contact-container">
+                    <ul class="contact-list">
+                        <li class="list-item"><ion-icon name="navigate-outline"></ion-icon><span class="contact-text place">Samutprakarn, Thailand</span></li>
+                        <li class="list-item"><ion-icon name="call-outline"><span class="contact-text phone"></ion-icon><a href="tel:080-xxx-xxx">(+66) 0-xxx-xxxx</a></span></li>
+                        <li class="list-item"><ion-icon name="mail-outline"><span class="contact-text envelope"></ion-icon><a href="mailto:#" title="Send me an email">supachai27102000@gmail.com</a></span></li>
+                    </ul>
+                </div>
+               
             </section>
         
 
