@@ -584,5 +584,69 @@ ion-icon:hover{
 
 /* change from screen width css part */
 @media screen and (max-width: 1200px) {
+    
+    header{
+        display: none;
+    }
+    .welcome-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
+    .profile-section{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 400px;
+    }
+
+    .timeline_grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    header{
+        display: none;
+    }
+    .welcome-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .profile-section{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 400px;
+    }
+
+    .timeline_grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 125%;
+    }
+
+    .contact-info{
+        text-align: center;
+    }
 }
