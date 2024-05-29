@@ -757,7 +757,8 @@ ion-icon:hover{
   }
 
   #more-icon{
-    display: block;
+    display: none;
+
   }
 
   .welcome-section{
