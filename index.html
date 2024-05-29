@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header class="header">
+      
         <div class="logo-box">
-          
+          Portfolio
         </div>
-      </div>
-      <nav id="navbar">
+      
+
+      <ion-icon name="reorder-three-outline" id="more-icon"></ion-icon>
+
+      <nav class="navbar" id="navbar">
         <ul>
           <li><a href="#welcome-section">Home</a></li>
           <li><a href="#profile">Profile</a></li>
@@ -42,13 +45,14 @@
           </div>
         </div>
         <p>I'm fresh graduate who has inspiration to be friend for learning and share knowledge with everyone.</p>
-
+        <div class="btn-group">
         <div class="btn-box">
           <a href="document/Supachai-Sinkaseam-Resume.pdf" download>Resume</a>
         </div>
         <div class="btn-box">
           <a href="document/Supachai_Sinkaseam-Portfolio.pdf" download>Portfolio</a>
         </div>
+      </div>
       </div>
       <div class="main">
         <span class="welcome-imgHover"></span>
@@ -144,8 +148,29 @@
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </article>
+        <article class="effect">
+          <div class="img p3"></div>
+          <h2 class="project-tile">Sample Pizza Store</h2>
+          <p class="project-info">This project made from ultimate react course about sample pizza store from course work.</p>
+          <a class="project-link" href="https://github.com/DonRadonZ/Sample-Pizza-Store">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </article>
       </div>
     </section>
+    <section id="blog" class="blog">
+      <h2 class="header">Blog</h2>
+      <div class="blog-container">
+        <div class="blog-box">
+          <div class="img b1"></div>
+          <h3>Creation Custom Hook in React</h3>
+          <p>This blog about detail how to build custom hook and use for</p>
+          <a href="https://www.borntodev.com/2024/05/13/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-custom-hooks-%E0%B9%83%E0%B8%99-react/" class="read-link">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section Design -->
     <section id="contact">
       <div class="contact-wrapper">
         <div class="contact-form">
@@ -165,9 +190,9 @@
         <div class="contact-info">
           <h2 class="header">Contact Me</h2>
           <h2>State</h2>
-          <h3 class="uinfo"> State, Thailand</h3>
+          <h3 class="uinfo"> Samutprakarn, Thailand</h3>
           <h2>Tel.</h2>
-          <h3 class="uinfo"> 080-329-6713</h3>
+          <h3 class="uinfo"> 080-629-6713</h3>
           <h2>Gmail</h2>
           <h3 class="uinfo">supachai27102000@gmail.com</h3>
           <h2>Social Media</h2>
@@ -187,4 +212,6 @@
           </div>
         </div>
     </section>
+    </body>
+    <script src="main.js"></script>
 </html>
