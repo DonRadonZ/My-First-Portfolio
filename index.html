@@ -1,60 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<head>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supachai Portfolio</title>
+    <link rel="stylesheet" href="./stylesV2.css" />
+</head>
+<body>
+    <!-- Header Section Design -->
     <header class="header">
-      
-        <div class="logo-box">
-          Portfolio
-        </div>
-      
+        <a href="" class="logo">Portfolio</a>
 
-      <ion-icon name="reorder-three-outline" id="more-icon"></ion-icon>
+        <ion-icon name="reorder-three-outline" id="menu-icon"></ion-icon>
 
-      <nav class="navbar" id="navbar">
-        <ul>
-          <li><a href="#welcome-section">Home</a></li>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#projects">Project</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <nav class="navbar">
+            <a href="#welcome" class="active">Home</a>
+            <a href="#profile" class="active">About</a>
+            <a href="" class="active">Portfolio</a>
+            <a href="" class="active">Blog</a>
+            <a href="" class="active">Contact</a>
+        </nav>
     </header>
-    <section id="welcome-section" class="welcome-section">
-      <div class="welcome-content">
-        <h1>Welcome to my portfolio</h1>
-        <h1>Hello everyone,</h1>
-        <h1>My name is</h1>
-        <h1 class="name">Supachai Sinkaseam</h1>
-        <div class="wrapper">
-          <h3 class="head-word">I'm</h3>
+
+    <!-- Welcome Section Design -->
+
+    <section class="welcome" id="welcome">
+        <div class="welcome-content">
+            <h3>Welcome to my portfolio</h3>
+            <h3>Hello everyone, My name is</h3>
+            <h1 class="name"><span>Supachai Sinkaseam</span></h1>
+          <div class="wrapper">
+          <h3>I'm </h3>
           <div class="words">
-            <span class="change">Electronics and Telecom Eng.</span>
+             <span class="change">Electronics and Telecom Eng.</span>
             <span class="change">Frontend Developer</span>
             <span class="change">Tennis Player</span>
             <span class="change">Content Creator</span> 
             <span class="change">Electronics and Telecom Eng.</span>
+            </div>
           </div>
+          <p>I'm fresh graduate who has inspiration to be friend for learning and share knowledge and create the community with everyone.</p>
+          <a class="btn" href="document/Supachai-Sinkaseam-Resume.pdf" download>Resume</a>
+          <a class="btn" href="document/Supachai_Sinkaseam-Portfolio.pdf" download>Portfolio</a>
         </div>
-        <p>I'm fresh graduate who has inspiration to be friend for learning and share knowledge with everyone.</p>
-        <div class="btn-group">
-        <div class="btn-box">
-          <a href="document/Supachai-Sinkaseam-Resume.pdf" download>Resume</a>
         </div>
-        <div class="btn-box">
-          <a href="document/Supachai_Sinkaseam-Portfolio.pdf" download>Portfolio</a>
         </div>
-      </div>
-      </div>
-      <div class="main">
+        
+        <div class="main-image">
         <span class="welcome-imgHover"></span>
         <div class="welcome-img">
           <div class="glowing-circle">
@@ -65,104 +59,127 @@
         </div>
       </div>
     </section>
-    <section id="profile">
-      <div class="profile-section">
-        <div class="profile-info">
-          <h2 class="header">Profile</h2>
-          <h2>Name</h2>
-          <h3 class="uinfo"> Supachai Sinkaseam</h3>
-          <h2>Nickname</h2>
-          <h3 class="uinfo"> Don</h3>
-          <h2>Sport</h2>
-          <h3 class="uinfo"> Tennis</h3>
-          <h2>Hobby</h2>
-          <h3 class="uinfo"> watch anime, play game</h3>
-          <h2>Message from author</h2>
+
+    <!-- Profile Section Design -->
+
+    <section class="profile" id="profile">
+      <div class="profile-img">
+        <img 
+        src="image/introduce_photo.jpg" alt="introduce_photo">
+      </div>
+
+      <div class="profile-content">
+        <h2 class="heading">About <span>Me</span></h2>
+          <h2 class="info-heading">Name</h2>
+          <h3> Supachai Sinkaseam</h3>
+          <h2 class="info-heading">Nickname</h2>
+          <h3> Don</h3>
+          <h2 class="info-heading">Sport</h2>
+          <h3> Tennis</h3>
+          <h2 class="info-heading">Hobby</h2>
+          <h3> watch anime, play game</h3>
+          <h2 class="info-heading">Message from author</h2>
           <p> My name is Supachai Sinkaseam. I am a fresh graduate from King Mongkut University Technology Thonburi. I passionate developer and machine learning with a creative mind and love to design some of poster or website.I enjoy to has activity with another people and I eager to learning and explore about new technology and framework for design for develop my work and create something new in future.</p>
-          <h2>Coding skill</h2>
+          <h2 class="info-heading">Coding skill</h2>
           <img src="/icons/icons8-html.svg" alt="html icon">
           <img src="/icons/icons8-css.svg" alt="css icon">
           <img src="/icons/icons8-javascript.svg" alt="javascript icon">
           <img src="/icons/react.svg" alt="react icon">
           <img src="/icons/icons8-typescript.svg" alt="Typescript icon">
           <img src="/icons/icons8-python.svg" alt="python icon">
+      </div>
+    </section>
+
+    <!-- Education and Experience Section Design -->
+    <section class="education-experience" id="education-experience">
+      <h2 class="heading"><span>Education</span> and <span>Experience</span></h2>
+      <div class="education-row">
+      <div class="education-col">
+        <h3 class="title">Education</h3>
+        <div class="education-box">
+
+        <div class="education-content">
+          <div class="content">
+            <div class="year"><ion-icon name="calendar-outline"></ion-icon> 2013-2018</div>
+            <h3>High School - Debsirin school</h3>
+            <p>Graduate as study plan Science and Math</p>
+          </div>
         </div>
-        <div class="image">
-          <img src="image/introduce_photo.jpg" alt="introduce_photo">
+
+        <div class="education-content">
+          <div class="content">
+            <div class="year"><ion-icon name="calendar-outline"></ion-icon> 2019-2022</div>
+            <h3>Bachelor Degree - King Mongkut University Technology Thonburi</h3>
+            <p>Graduate as Faculty of Engineering Department of Electronics and Telecommunication Engineer</p>
+          </div>
+
+        </div>
+
+        </div>
+
+      </div>
+
+        <div class="education-col">
+        <h3 class="title">Experience</h3>
+        <div class="education-box">
+
+        <div class="education-content">
+          <div class="content">
+            <div class="year"><ion-icon name="calendar-outline"></ion-icon> 1 1Jun-31July 2022</div>
+            <h3>Internship - Softnix Technology Co.,Ltd.</h3>
+            <p>Internship in role of Frontend Developer. Create Software to collect license from customer use React.</p>
+          </div>
+        </div>
+
+        </div>
+
+        </div>
+
+      </div>
+      </div>
+
+
+    </section>
+
+    <!-- Project Section Design -->
+    <section class="projects" id="projects">
+      <h2 class="heading">My <span>Projects</span></h2>
+      <div class="project-container">
+        <div class="project-card">
+          <img src="image/firstscreen.png" alt="senior project">
+          <div class="project-content">
+            <h2 class="project-title">Intelligent System to Hazard on Financial Transactions</h2>
+            <p class="project-description">This project I made from senior project about Intellegent system via transaction that use for help safe transaction.</p>
+            <a href="https://github.com/DonRadonZ/Senior-Project"><ion-icon name="logo-github"></ion-icon></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="image/license_gen.jpg" alt="senior project">
+          <div class="project-content">
+            <h2 class="project-title">Softnix License Generator</h2>
+            <p class="project-description">This project made from internship to collect license from customer and inform status license.</p>
+            <a href="https://github.com/DonRadonZ/Softnix-License-Generator"><ion-icon name="logo-github"></ion-icon></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="image/sample_pizza.png" alt="senior project">
+          <div class="project-content">
+            <h2 class="project-title">Sample Pizza Store
+            </h2>
+            <p class="project-description">This project made from ultimate react course about sample pizza store from course work.</p>
+            <a href="https://github.com/DonRadonZ/Sample-Pizza-Store"><ion-icon name="logo-github"></ion-icon></a>
+          </div>
         </div>
       </div>
     </section>
-    <section id="about">
-      <div class="highlight">
-        <h2 class="header">Education and Experience</h2>
-      </div>
-      <div class="timeline_grid">
-        <div class="timeline">
-          <div class="timeline_heading">
-            <h4>Education</h4>
-          </div>
-          <div class="timeline_content">
-            <h5 class="edu">King Mongkut University Technology Thonburi</h5>
-            <span class="point"></span>
-            <p class="year">2019-2023</p>
-            <p>Bachelor of Electronics and Telecommunication Engineering</p>
-          </div>
-          <div class="timeline_content">
-            <h5 class="edu">Debsirin School</h5>
-            <span class="point"></span>
-            <p class="year">2013-2018</p>
-            <p>Science and Math</p>
-          </div>
-        </div>
-        <div class="timeline">
-          <div class="timeline_heading">
-            <h4>Work Experience</h4>
-          </div>
-          <div class="timeline_content">
-            <h5 class="edu">Softnix Technology co.ltd</h5>
-            <span class="point"></span>
-            <p class="year">1Jun-31July 2022</p>
-            <p>Working internship in role of Frontend Developer </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="projects">
-      <div class="highlight">
-        <h2 class="header">Project</h2>
-      </div>
-      <div class="projects-container">
-        <article class="effect">
-          <div class="img p2"></div>
-          <h2 class="project-tile">Senior Project</h2>
-          <p class="project-info">This project I made from senior project about Intellegent system via transaction that use for help safe transaction.</p>
-          <a class="project-link" href="https://github.com/DonRadonZ/Senior-Project">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </article>
-        <article class="effect">
-          <div class="img p1"></div>
-          <h2 class="project-tile">Softnix License Generator</h2>
-          <p class="project-info">This project made from internship to collect license from customer and inform status license</p>
-          <a class="project-link" href="https://github.com/DonRadonZ/Softnix-License-Generator">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </article>
-        <article class="effect">
-          <div class="img p3"></div>
-          <h2 class="project-tile">Sample Pizza Store</h2>
-          <p class="project-info">This project made from ultimate react course about sample pizza store from course work.</p>
-          <a class="project-link" href="https://github.com/DonRadonZ/Sample-Pizza-Store">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </article>
-      </div>
-    </section>
-    <section id="blog" class="blog">
-      <h2 class="header">Blog</h2>
+
+    <!-- Blog Section Design -->
+
+    <section class="blog" id="blog">
+      <h2 class="heading">My <span>Blogs</span></h2>
       <div class="blog-container">
         <div class="blog-box">
-          <div class="img b1"></div>
+          <img src="image/react-customhooks-fb-jpg.webp" alt="custom hook blog">
           <h3>Creation Custom Hook in React</h3>
           <p>This blog about detail how to build custom hook and use for</p>
           <a href="https://www.borntodev.com/2024/05/13/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-custom-hooks-%E0%B9%83%E0%B8%99-react/" class="read-link">Read More</a>
@@ -170,8 +187,9 @@
       </div>
     </section>
 
-    <!-- Contact Section Design -->
-    <section id="contact">
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
       <div class="contact-wrapper">
         <div class="contact-form">
           <form action="#">
@@ -187,32 +205,29 @@
             <input type="submit" value="Send Message" class="btn">
           </form>
         </div>
-        <div class="contact-info">
-          <h2 class="header">Contact Me</h2>
-          <h2>State</h2>
-          <h3 class="uinfo"> Samutprakarn, Thailand</h3>
-          <h2>Tel.</h2>
-          <h3 class="uinfo"> 080-629-6713</h3>
-          <h2>Gmail</h2>
-          <h3 class="uinfo">supachai27102000@gmail.com</h3>
-          <h2>Social Media</h2>
-          <div class="social-media">
-            <a href="https://www.facebook.com/supachai.sinkraseam/">
-              <ion-icon name="logo-facebook"/>
-            </a>
-            <a href="https://www.linkedin.com/in/supachai-s-40650a104/">
-              <ion-icon name="logo-linkedin"/>
-            </a>
-            <a href="https://github.com/DonRadonZ">
-              <ion-icon name="logo-github"/>
-            </a>
-            <a href="https://www.instagram.com/don_radonz/">
-              <ion-icon name="logo-instagram"/>
-            </a>
-          </div>
+        
         </div>
     </section>
+
     
+    <!-- Footer section design -->
+    <footer class="footer">
+      <h3>Tel. 080-629-6713</h3>
+      <div class="social-media">
+        <a href="https://www.facebook.com/supachai.sinkraseam/">
+          <ion-icon name="logo-facebook"/>
+        </a>
+        <a href="https://www.linkedin.com/in/supachai-s-40650a104/">
+          <ion-icon name="logo-linkedin"/>
+        </a>
+        <a href="https://github.com/DonRadonZ">
+          <ion-icon name="logo-github"/>
+        </a>
+        <a href="https://www.instagram.com/don_radonz/">
+          <ion-icon name="logo-instagram"/>
+        </a>
+      </div>
+    </footer>
     <script src="main.js"></script>
-    </body>
+</body>
 </html>
