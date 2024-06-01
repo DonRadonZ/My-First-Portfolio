@@ -1,6 +1,6 @@
 /*========================== toggle icon navbar =============================== */
 
-let menuIcon = document.querySelector("#more-icon")
+let menuIcon = document.querySelector("#menu-icon")
 
 
 menuIcon.onclick = () => {
