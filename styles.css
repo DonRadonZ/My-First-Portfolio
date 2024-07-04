@@ -694,4 +694,9 @@ span{
   .footer{
     flex-direction: column;
   }
+
+  .blog-container{
+    flex-direction: column ;
+  }
+  
 }
